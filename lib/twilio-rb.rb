@@ -2,7 +2,7 @@
 %w<resource finder persistable deletable associations association_proxy>.each { |lib| require File.join(File.dirname(__FILE__), 'twilio', "#{lib}.rb") }
 
 module Twilio
-  API_ENDPOINT        = 'https://api.twilio.com/2010-04-01'
+  API_ENDPOINT        = 'https://api.twilio.com:8443/2010-04-01'
   APIError            = Class.new StandardError
   ConfigurationError  = Class.new StandardError
   InvalidStateError   = Class.new StandardError
